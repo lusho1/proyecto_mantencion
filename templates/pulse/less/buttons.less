@@ -1,0 +1,488 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+.ct-text-accent{
+    background: @buttonbackgroundcolor;
+    color: @buttontextcolor;
+    font-size: 14px;
+}
+
+// Buttons and Inputs
+.readmore
+{
+    a
+    {
+        color: @buttontextcolor;
+        &:hover
+        {
+            color: @buttontextcolor;
+        }
+    }
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover, 
+.btn-primary:hover, 
+.btn:active, 
+.btn-primary:active, 
+.btn.disabled:hover, 
+.btn[disabled]:hover,
+.btn.disabled:active, 
+.btn[disabled]:active,
+.button:active, .readon:active, .readmore:active, button.validate:active, #member-profile a:active, #member-registration a:active, .formelm-buttons button:active,
+.button:hover, .readon:hover, .readmore:hover, button.validate:hover, #member-profile a:hover, #member-registration a:hover, .formelm-buttons button:hover,.btn, .btn-primary,
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button, .btn.hasTooltip, .btn.hasTooltip:active, .btn.hasTooltip:hover,
+.input-append .btn:last-child, .input-append .btn:first-child, .input-prepend .btn:first-child, .form-search .input-prepend .btn
+{
+    height: 34px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    z-index: 0;
+    outline: none;
+    background: @buttonbackgroundcolor;
+    color: @buttontextcolor;
+
+    text-shadow: none;
+    text-align: center;
+    .border-radius(4px !important);
+}
+.btn
+{
+    font-size: 20px;
+    padding: 5px 25px;
+    background-color: @buttonbackgroundcolor;
+    border-bottom: 3px solid darken(@buttonbackgroundcolor, 14.2%darken);
+}
+.btn:hover, #toTop:hover
+{
+    background-color: darken(@buttonbackgroundcolor, 14.2%darken) !important;
+}
+.bottombtn
+{
+    padding: 10px;
+    font-size: 32px;
+    background-color: #00aeef;
+    color: @buttontextcolor;
+    border: none;
+    line-height: 16px;
+    .border-radius(50% !important);
+}
+
+.input-append .btn:last-child, .input-append .btn:first-child, .input-prepend .btn:first-child, .form-search .input-prepend .btn
+{
+    border-bottom: 3px solid darken(@buttonbackgroundcolor, 14.2%darken);
+}
+
+[class^="input-"] + .btn,
+.input-append .btn {
+    margin-left: 5px;
+}
+
+.input-prepend .btn {
+    margin-right: 5px;
+}
+
+.btn-primary.disabled, .btn-primary[disabled], .btn.disabled, .btn[disabled],
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, .btn.disabled:hover, .btn[disabled]:hover,
+.btn-primary.disabled:active, .btn-primary[disabled]:active, .btn.disabled:active, .btn[disabled]:active{
+    background-color: lighten(@buttonbackgroundcolorhover,20%);
+    color: lighten(@buttontextcolorhover,20%);
+    border: 1px solid ligthen(@buttonbackgroundcolorhover,20%);
+    .transition(none);
+}
+
+.btn:hover, 
+.btn-primary:hover, 
+.btn:active, 
+.btn-primary:active, 
+.button:active, .readon:active, .readmore:active, button.validate:active, #member-profile a:active, #member-registration a:active, .formelm-buttons button:active,
+.button:hover, .readon:hover, .readmore:hover, button.validate:hover, #member-profile a:hover, #member-registration a:hover, .formelm-buttons button:hover,
+.input-append .btn:last-child:hover, .input-append .btn:first-child:hover, .input-prepend .btn:first-child:hover, .form-search .input-prepend .btn:hover,
+.input-append .btn:last-child:active, .input-append .btn:first-child:active, .input-prepend .btn:first-child:active, .form-search .input-prepend .btn:active,
+.btn.hasTooltip:active, .btn.hasTooltip:hover
+{
+    width: auto;
+    color: @buttontextcolorhover;    
+    background-color: none;
+    
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.btn.btn-large.btn-block:hover
+{
+    width: 100% !important;
+}
+
+#toTop
+{
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    z-index: 20000;
+    .border-radius(50%);
+    border: 3px solid darken(@buttonbackgroundcolor, 14.2%darken);
+}
+
+// resetting Bootstrap buttons
+.btn:focus
+{
+    outline: none;
+}
+
+// SHOWCASE BUTTON OVERRIDES
+#ct-showcase-divider
+{
+    padding-bottom: 70px;
+    margin-bottom: -1px;
+}
+
+@media (max-width: 1224px)
+{
+    #ct-showcase-divider
+    {
+        padding-bottom: 0;
+    }
+}
+
+#rt-showcase
+{
+    .rt-block
+    {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        z-index: 1;
+    }
+    
+    a, ul.menu li .separator
+    {
+	color: @showcaselinkcolor;    
+    }
+
+    a:hover
+    {
+	color: @showcaselinkcolorhover;
+    }
+}
+
+// FEATURE BUTTON OVERRIDES
+#rt-feature
+{
+    .btn:focus
+    {
+        outline: none;
+    }
+}
+
+// FOOTER BUTTON OVERRIDES
+#rt-footer, .box2
+{
+    a, ul.menu li .separator
+    {
+	color: @footerlinkcolor;
+    }
+
+    a:hover
+    {
+	color: @footerlinkcolorhover;
+    }
+    .btn
+    {
+        background-color: @copyrightBackgroundColor;
+        border-bottom: 3px solid darken(@copyrightBackgroundColor,14.2%);
+        height: 42px;
+    }
+    .btn:hover
+    {
+        background-color: darken(@copyrightBackgroundColor,14.2%) !important;
+    }
+    
+}
+
+// override the above for signaling buttons
+.btn-info,
+.btn-info:hover, 
+.btn-info:active
+{
+    color: #fafafa;
+    background: none;
+    background-color: #49AFCD !important;
+    border-color: #265966;
+}
+
+.btn-success,
+.btn-success:hover, 
+.btn-success:active
+{
+    color: #fafafa;
+    background: none;
+    background-color: #5BB75B !important;
+    border-color: #2e5c2e;
+}
+
+.btn-warning,
+.btn-warning:hover, 
+.btn-warning:active
+{
+    color: #fafafa;
+    background: none;
+    background-color: #FAA732 !important;
+    border-color: #7d521a;
+}
+
+.btn-danger,
+.btn-danger:hover, 
+.btn-danger:active
+{
+    color: #fafafa;
+    background: none;
+    background-color: #DA4F49 !important;
+    border-color: #6b2629;
+}
+
+.btn-inverse{
+    color: @buttontextcolorhover;    
+    background-color: @buttonbackgroundcolorhover;
+    border: 1px solid @buttonbackgroundcolorhover;
+}
+
+.btn-inverse:hover, 
+.btn-inverse:active
+{
+    color: @buttontextcolor;    
+    background-color: @buttonbackgroundcoloralternate !important;
+    border: 1px solid @buttonbordercolor;
+}
+
+.btn-link
+{
+    border: 0;
+    color: @linkcolor;
+    background: none;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:active
+{
+    border: 0;
+    color: @linkcolorhover;
+    background: none !important;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+     -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
+// iconic buttons
+.halfCircle {
+    margin: 0 auto;
+     height:80px;
+     width:160px;
+     border-radius: 160px 160px 0 0;
+     -moz-border-radius: 160px 160px 0 0;
+     -webkit-border-radius: 160px 160px 0 0;
+     background-color: @buttonbackgroundcolor;
+}
+
+.halfCircleBottom{
+     margin: 0 auto;
+     height:80px;
+     width:160px;
+     border-radius: 0 0 160px 160px;
+     -moz-border-radius: 0 0 160px 160px;
+     -webkit-border-radius: 0 0 160px 160px;
+     background-color: @buttonbackgroundcolorhover;
+     overflow: hidden;
+}
+
+.halfCircleBottom > div{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.ct-iconic-text{
+    padding-top: 5px;
+}
+ 
+.ct-half-circle-inner
+{
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    width: 45px;    
+    height: 45px;
+}
+
+.ct-half-circle-inner > img
+{
+    width: 45px;    
+    height: 45px;
+}
+ 
+.ct-zoom
+{
+    .halfCircleBottom{
+       color: @buttontextcolor !important; 
+    }
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.ct-zoom:hover
+{
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+         -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+#rt-extension > .rt-container > [class^="rt-grid"] > .rt-block
+{
+    border-left: 1px solid darken(@bodybackground, 25%);
+}
+
+#rt-extension > .rt-container > [class^="rt-grid"]:first-child > .rt-block
+{
+    border-left: 1px solid transparent;
+}
+
+@media (max-width: 1199px)
+{
+    #rt-extension > .rt-container > [class^="rt-grid"] > .rt-block,
+    #rt-extension > .rt-container > [class^="rt-grid"]:first-child > .rt-block
+    {
+        border-left: none;
+    }
+    
+    .halfCircle {
+         height:70px;
+         width:140px;
+         border-radius: 140px 140px 0 0;
+         -moz-border-radius: 140px 140px 0 0;
+         -webkit-border-radius: 140px 140px 0 0;
+    }
+
+    .halfCircleBottom{
+         height:70px;
+         width:140px;
+         border-radius: 0 0 140px 140px;
+         -moz-border-radius: 0 0 140px 140px;
+         -webkit-border-radius: 0 0 140px 140px;
+    }
+    
+    .ct-half-circle-inner
+    {
+        padding-top: 20px;
+    }
+    
+    .halfCircleBottom > div{
+        padding-top: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 959px)
+{
+    #rt-extension > .rt-container > [class^="rt-grid"]{
+        display: block;
+        float: none;
+        position: relative;
+        width: 100%;
+    }
+    
+    #rt-extension > .rt-container > [class^="rt-grid"] > .rt-block
+    {
+        border-bottom: 1px solid darken(@bodybackground, 25%);
+    }
+    
+    #rt-extension > .rt-container > [class^="rt-grid"].rt-omega > .rt-block{
+        border-bottom: none;
+    }
+}
+
+// iconic buttons
+.ct-iconic-text{
+    padding-top: 5px;
+}
+
+.pic
+{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: @buttonbackgroundcolor;
+    border-radius: 100%;
+}
+
+.pic a
+{
+    width: 50px;
+    height: 50px;    
+    border-radius: 100%;    
+    overflow: hidden;
+ }
+ 
+.bouncer img
+{
+    width: 25px;    
+    height: 25px;
+    padding: 12.5px 0px 0px 0px;
+}
+
+.bouncer{
+     -ms-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8); 
+    -moz-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8); 
+    -webkit-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8); 
+    transition: all .4s cubic-bezier(0, 1.8, 1, 1.8); 
+}
+
+.bouncer:hover{
+    
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+    
+}
+
+.paraShave
+{
+    p
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+}

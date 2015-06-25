@@ -1,0 +1,320 @@
+select,
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+
+.uneditable-input,
+.component-content .login-fields #username, .login-fields #password,
+#contact-form dd input, #contact-form dd textarea, #modlgn-username,
+#modlgn-passwd, #jform_email, #member-registration dd input, #search-searchword,
+.finder .inputbox
+{
+    padding: 4px 5px 4px 5px;
+    min-height: 34px;
+    margin: 0 0 0 0;
+    border: none;
+    background: @formsBorderFocusColor;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0px;
+    .transition(none);
+    outline: none;
+}
+
+select:focus,
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus, 
+.uneditable-input:focus{
+    outline: 0;
+}
+
+#rt-top
+{
+    #mod-search-searchword
+    {
+        width: 100%;
+    }
+
+    input.button
+    {
+        background-color: @buttonbackgroundcolor;
+        border: 1px solid @buttonbackgroundcolor;
+        min-height: 42px;
+        min-width: 42px;
+        display: inline;
+        padding: 0px;
+    }
+    
+    input.button:hover
+    {
+        background-color: @buttonbackgroundcolorhover;
+        border: 1px solid @buttonbackgroundcolorhover;
+    }
+}
+
+
+legend
+{
+    color: rgba(red(@linkcolor) , green(@linkcolor) , blue(@linkcolor) , 0.7);
+    border-bottom: 1px solid rgba(red(@linkcolor) , green(@linkcolor) , blue(@linkcolor) , 0.7);
+
+    small
+    {
+        color: @linkcolor;
+    }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input
+{
+    color: @bodytext;
+}
+
+// Uneditable inputs
+.uneditable-input,
+.uneditable-textarea
+{
+    color: @bodytextlight;
+    background-color: @light-grey;
+}
+
+// Inputs
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly]
+{
+    background-color: @light-grey;
+}
+
+.input-prepend,
+.input-append
+{
+    .add-on
+    {
+        background-color: @bodybackground2;
+        min-height: 24px;
+        .border-radius(4px !important);
+    }
+    &.input-append .media-preview
+    {
+        margin: 0;
+    }
+}
+
+.input-append
+{
+    .add-on
+    {
+        margin-left: 5px !important;
+    }
+}
+
+.input-prepend
+{
+    .add-on
+    {
+        margin-right: 5px !important;
+    }
+}
+
+.input-append .search-query,
+.input-prepend .search-query,
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+    .border-radius(4px !important);
+}
+
+// resetting bootstrap input
+.ct-horizontal-logout
+{
+    display: inline-block;
+    float: right;
+    
+    .login-greeting, .logout-button
+    {
+        float: left;
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
+.ct-horizontal-login
+{
+    display: inline-block;
+    float: right;
+    
+    .ct-horizontal-wrap
+    {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        float: right;
+    }
+    
+    div
+    {
+        display: inline;
+        float: left;
+        width: 120px;
+        margin-bottom: 5px;
+    }
+    
+    input[type="submit"]
+    {
+        float: left;
+        display: inline;
+    }
+    
+    .ct-horizontal-login-button
+    {
+        background: url(../images/bg_btn_login.png) no-repeat center, @buttonbackgroundcolorhover;
+        display: inline-block;
+        margin: 0;
+        text-indent: -9999px;
+        overflow: hidden;
+        width: 33px;    // 33px
+        height: 30px;   // 30px
+        min-height: 30px;
+        padding: 0;
+        background-repeat: no-repeat;
+        
+        border: 1px solid @buttonbackgroundcolorhover;
+        border-radius: 0px;
+        
+     }
+}
+
+@media (max-width: 767px)
+{
+    .ct-horizontal-logout, .ct-horizontal-login
+    {
+        position: relative;
+        display: block;
+        float: none;
+        width: 100%;
+        
+        .ct-horizontal-wrap
+        {
+            width: 100%;
+            display: block;
+            position: relative;
+            float: none;
+        }
+        
+        div
+        {
+            display: block;
+            float: none;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        
+        input, input[type="text"], input[type="password"]
+        {
+            float: none;
+            width: 100% !important;
+        }
+        .ct-horizontal-login-button
+        {
+            text-align: center;
+        }
+        .ct-clear-both-horz
+        {
+            display: none;
+        }
+    }
+}
+
+// Form Actions
+.form-actions
+{
+    background-color: @bodybackground2;
+}
+
+.uneditable-input
+{
+    background-color: @light-grey;
+}
+
+.filter-search.alert-info
+{
+    .inputbox
+    {
+        color: @bodyTextDark;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #rt-top .search
+    {
+        margin: 0 auto;
+        text-align: center;
+        
+        .inputbox, .search-query
+        {
+            width: 100%;
+        }
+    }
+}

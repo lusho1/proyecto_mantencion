@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="2.5" method="upgrade">
+ <name>Pulse</name>
+ <packagename>pulse</packagename>
+ <creationDate>June 2015</creationDate>
+ <author>Markus Bopp</author>
+ <copyright>Copyright © 2015 Markus Bopp</copyright>
+ <version>1.1.2</version>
+ <url>http://www.themedriver.com/</url>
+ <packager>Themedriver</packager>
+ <scriptfile>script.php</scriptfile>
+ <description>Package to install the template. The slider and iconic buttons are available as manual installs from the modules directory.</description>
+ <files folder="packages">
+    <file type="plugin" id="rokextender" group="system">rokextender.zip</file>
+    <file type="module" id="mod_roknavmenu" client="site">mod_roknavmenu.zip</file>
+    <file type="template" id="tpl_pulse" client="site">tpl_pulse.zip</file>
+ </files>
+ </extension>

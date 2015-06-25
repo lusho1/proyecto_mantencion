@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="template-options">
+    <fieldset name="toolbar-panel" label="TOOLBAR">
+        <field name="presets" type="preset" mode="scroller" default="preset1" setbyurl="true" setinoverride="false" panel_position="left" show_label="false"/>
+    </fieldset>
+    
+    <fieldset name="overview" label="OVERVIEW">
+      <field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false" />
+      <field name="overview" type="file" path="/template-overview.php" show_label="false"/>
+  </fieldset>
+  
+  <fieldset name="style" label="STYLE">
+    <field name="master" type="hidden" value="false" default="true"/>
+    <field name="current_id" type="hidden" value="false" default="true"/>
+    <field name="gantry" type="gantry" value="" panel_position="hiddens"/>
+    <field name="template_full_name" type="hidden" default="TheKraken"/>
+    <field name="grid_system" type="hidden" default="12"/>
+    <field name="template_prefix" type="hidden" default="gantry-"/>
+    <field name="cookie_time" type="hidden" default="31536000"/>
+
+    <field name="override_set" type="hidden" default="2.5"/>
+
+
+    <field name="name" type="hidden" default="Preset1" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+    <field name="copy_lang_files_if_diff" type="hidden" default="1"/>
+
+    <fields name="logo" type="selectedset" label="LOGO" description="LOGO_DESC">
+            <field name="enabled" type="toggle" default="1" label="SHOW" />
+            <field name="position" type="position" translation="false" default="header-a" label="POSITION" />
+            <field name="type" type="selectbox" selector="true" default="gantry" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+            <fields type="set" name="gantry" label="Gantry Template">
+            </fields>
+            <fields type="set" name="custom" label="CUSTOM">
+                <field name="image" type="imagepicker" default="" label="LOGO_PICKER" description="LOGO_PICKER_DESC" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+            </fields>
+    </fields>
+
+    <fields name="font1" type="chain" label="Title Font (h1,h2)" description="FONT_SETTINGS_DESC">
+            <field name="family1" type="ctfonts" default="g:Source Sans Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic" primary="helvetica" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                <option value="geneva">Geneva</option>
+                <option value="georgia">Georgia</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="lucida">Lucida</option>
+                <option value="optima">Optima</option>
+                <option value="palatino">Palatino</option>
+                <option value="trebuchet">Trebuchet</option>
+            </field>
+            <field name="weight1" type="selectbox" default="normal" label="Font Weight" setinsession="true"
+                 setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                 <option value="normal">normal</option>
+                 <option value="bold">bold</option>
+                 <option value="bolder">bolder</option>
+                 <option value="lighter">lighter</option>
+                 <option value="100">100</option>
+                 <option value="200">200</option>
+                 <option value="300">300</option>
+                 <option value="400">400</option>
+                 <option value="500">500</option>
+                 <option value="600">600</option>
+                 <option value="700">700</option>
+                 <option value="800">800</option>
+                 <option value="900">900</option>
+             </field>
+         </fields>
+         
+         <fields name="font2" type="chain" label="Body Font" description="FONT_SETTINGS_DESC">
+            <field name="family2" type="ctfonts" default="g:Source Sans Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic" primary="geneva" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                <option value="geneva">Geneva</option>
+                <option value="georgia">Georgia</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="lucida">Lucida</option>
+                <option value="optima">Optima</option>
+                <option value="palatino">Palatino</option>
+                <option value="trebuchet">Trebuchet</option>
+            </field>
+            <field name="weight2" type="selectbox" default="normal" label="Font Weight" setinsession="true"
+                 setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                 <option value="normal">normal</option>
+                 <option value="bold">bold</option>
+                 <option value="bolder">bolder</option>
+                 <option value="lighter">lighter</option>
+                 <option value="100">100</option>
+                 <option value="200">200</option>
+                 <option value="300">300</option>
+                 <option value="400">400</option>
+                 <option value="500">500</option>
+                 <option value="600">600</option>
+                 <option value="700">700</option>
+                 <option value="800">800</option>
+                 <option value="900">900</option>
+             </field>
+         </fields>
+         
+         <fields name="font3" type="chain" label="Main Menu Font" description="FONT_SETTINGS_DESC">
+            <field name="family3" type="ctfonts" default="g:Source Sans Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic" primary="geneva" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                <option value="geneva">Geneva</option>
+                <option value="georgia">Georgia</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="lucida">Lucida</option>
+                <option value="optima">Optima</option>
+                <option value="palatino">Palatino</option>
+                <option value="trebuchet">Trebuchet</option>
+            </field>
+            <field name="weight3" type="selectbox" default="normal" label="Font Weight" setinsession="true"
+                 setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                 <option value="normal">normal</option>
+                 <option value="bold">bold</option>
+                 <option value="bolder">bolder</option>
+                 <option value="lighter">lighter</option>
+                 <option value="100">100</option>
+                 <option value="200">200</option>
+                 <option value="300">300</option>
+                 <option value="400">400</option>
+                 <option value="500">500</option>
+                 <option value="600">600</option>
+                 <option value="700">700</option>
+                 <option value="800">800</option>
+                 <option value="900">900</option>
+             </field>
+         </fields>
+        
+    </fieldset>
+    
+    <fieldset name="other_colors" label="Colors">
+        
+        <field name="link_colors" type="spacer" label="Colors only available in the full version for as little as 25 USD"/>
+        
+        <field name="linkcolor" type="hidden" default="#f03a00" label="LINK_COLOR" description="LINK_COLOR_DESC" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="linkcolorhover" type="hidden" default="#e86535" label="Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttonbackgroundcolor" type="hidden" default="#f03a00" label="Button Background Color" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttonbackgroundcoloralternate" type="hidden" default="#293e4b" label="Button Background Alternative Color" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttonbordercolor" type="hidden" default="transparent" label="Button Border color" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttontextcolor" type="hidden" default="#ffffff" label="Button Text Color" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttontextcolorhover" type="hidden" default="#ffffff" label="Button Text Color Hover" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="buttonbackgroundcolorhover" type="hidden" default="#293e4b" label="Button Background Color Hover" description="The text color for buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+       
+        
+        
+        <field name="menuTextColor" type="hidden" default="#ffffff" label="Menu Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="menuTextHover" type="hidden" default="#f6710d" label="Menu Text Hover Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="menubackgroundcolor" type="hidden" default="#000000" label="Menu Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+         
+        
+        <field name="showcasebackground" type="hidden" default="#ffffff" label="Showcase Background Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="showcaselinkcolor" type="hidden" default="#f03a00" label="Showcase Link Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="showcaselinkcolorhover" type="hidden" default="#e86535" label="Showcase Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+          
+        <field name="showcasetext" type="hidden" default="#ffffff" label="Showcase Text Color" description="Choose the text color for the showcase" setinsession="true"
+                setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="showcasetextslider" type="hidden" default="#ffffff" label="Showcase Slider Text Color" description="Choose the text color for the showcase" setinsession="true"
+                setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="showcasetitle" type="hidden" default="#20323e" label="Showcase Titles Color" description="Choose the titles color for the shocase" setinsession="true"
+                setbysession="true" setincookie="true" setbycookie="true"/>
+         
+       
+        <field name="breadcrumbLinkColor" type="hidden" default="#20323e" label="Breadcrumb Link Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        <field name="breadcrumbTitle" type="hidden" default="#20323e" label="Breadcrumb Title Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        <field name="breadcrumbLinkHoverColor" type="hidden" default="#20323e" label="Breadcrumb Link Hover Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="breadcrumbTextColor" type="hidden" default="#20323e" label="Breadcrumb Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="breadcrumbBackgroundColor" type="hidden" default="#e8e8e8" label="Breadcrumb Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="featurelinkcolor" type="hidden" default="#f03a00" label="Feature Link Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="featurelinkcolorhover" type="hidden" default="#e86535" label="Feature Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+         
+        <field name="featureBackgroundColor" type="hidden" default="#f5f5f5" label="Feature Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="featureTitlesColor" type="hidden" default="#404041" label="Feature Titles Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="featureTextColor" type="hidden" default="#404041" label="Feature Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+       
+        <field name="mainbackground" type="hidden" default="#ffffff" label="Main Body Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="firstColor" type="hidden" default="#ffffff" label="Main Body Swap Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="moduleBackgroundColor" type="hidden" default="#ffffff" label="Module Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="bodytext" type="hidden" default="#898989" label="Main Body Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+     
+        <field name="bodytextlight" type="hidden" default="#999999" label="Main Body Light Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="bodytitle" type="hidden" default="#898989" label="Main Body Titles Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="extrabottomlinkcolor" type="hidden" default="#f03a00" label="Extra Bottom Link Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="extrabottomlinkcolorhover" type="hidden" default="#e86535" label="Extra Bottom Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+         
+        
+        <field name="extrabottomBackgroundColor" type="hidden" default="#ffffff" label="Extra Bottom Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="extrabottomTitlesColor" type="hidden" default="#9ba3a9" label="Extra Bottom Titles Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="extrabottomTextColor" type="hidden" default="#9ba3a9" label="Extra Bottom Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="footerColor" type="hidden" default="#ffffff" label="Footer Link Color" description="This color changes the font color of the footer position" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="footerlinkcolor" type="hidden" default="#404041" label="Footer Link Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="footerlinkcolorhover" type="hidden" default="#404041" label="Footer Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="footerBackgroundColor" type="hidden" default="#f03a00" label="Footer Background Color" description="This color changes the background color of the footer and the button in the extension position" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="copyrightlinkcolor" type="hidden" default="#d7d7d7" label="Copyright Link Color" description="" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="copyrightlinkcolorhover" type="hidden" default="#ffffff" label="Copyright Link Color On Hover" description="Choose this color for hovering over links and buttons" setinsession="true"
+        setbysession="true" setincookie="true" setbycookie="true"/>
+         
+        
+        <field name="copyrightBackgroundColor" type="hidden" default="#404041" label="Copyright Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="copyrightTitlesColor" type="hidden" default="#9ba3a9" label="Copyright Titles Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        <field name="copyrightTextColor" type="hidden" default="#9ba3a9" label="Copyright Text Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+        
+        
+        <field name="formsBorderFocusColor" type="hidden" default="#f0f0f0" label="Textfield Background Color" description="" setinsession="true"
+            setbysession="true" setincookie="true" setbycookie="true"/>
+     
+        
+    </fieldset>
+    
+    <fieldset name="features" label="FEATURES">
+        <field name="styledeclaration-priority" type="hidden" default="1"/>
+        <field name="viewswitcher-priority" type="hidden" default="2"/>
+        <field name="logo-priority" type="hidden" default="3"/>
+        <field name="copyright-priority" type="hidden" default="4"/>
+        <field name="date-priority" type="hidden" default="7"/>
+        <field name="systemmessages-priority" type="hidden" default="9"/>
+        <field name="morearticles-priority" type="hidden" default="12"/>
+        <field name="smartload-priority" type="hidden" default="13"/>
+        <field name="pagesuffix-priority" type="hidden" default="14"/>
+        <field name="analytics-priority" type="hidden" default="16"/>
+        <field name="dropdownmenu-priority" type="hidden" default="18"/>
+        <field name="jstools-priority" type="hidden" default="21"/>
+        <field name="moduleoverlays-priority" type="hidden" default="22"/>
+        <field name="rtl-priority" type="hidden" default="23"/>
+        <field name="splitmenu-priority" type="hidden" default="24"/>
+        <field name="webfonts-priority" type="hidden" default="27"/>
+
+        <field name="styledeclaration-enabled" type="hidden" default="1"/>
+
+        <field name="enablestickymenu" type="toggle" default="1" label="Sticky Menu" description="If enabled, the top menu will be sticking on top upon page scroll."/>
+        
+        <field name="totupbutton" type="toggle" default="1" label="Show ToTop Button" />
+        
+        <fields name="date" type="chain" label="DATE" description="DATE_DESC">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="position" type="position" translation="false" default="top-d" label="POSITION"/>
+            <field name="clientside" type="toggle" default="0" label="DATE_CLIENTSIDE"/>
+            <field name="formats" type="dateformats" default="%A, %B %d, %Y" label=" ">
+                <option value="%A, %B %d, %Y"/>
+                <option value="%B %d, %Y"/>
+                <option value="%d %h, %Y"/>
+                <option value="%d %h, %y"/>
+                <option value="%a, %h %d, %Y"/>
+                <option value="%a, %h %d, %y"/>
+                <option value="%A, %d %m %Y"/>
+                <option value="%A %e %B %Y"/>
+            </field>
+        </fields>
+
+
+        <field name="branding-enabled" type="hidden" default="1" label="SHOW" />
+        <field name="branding-position" type="hidden" default="copyright-a" label="POSITION" />
+
+        <field name="copyright-enabled" type="hidden" default="1" label="SHOW" />
+        <field name="copyright-position" type="hidden" default="copyright-a" label="POSITION" />
+        <field name="copyright-text" type="hidden" default="&lt;div style=&quot;clear:both; display: block; text-align: center; margin-top: 20px;&quot;&gt;Powered By www.themedriver.com&lt;/div&gt;" label="TEXT" class="text-long" />
+
+
+        <fields name="systemmessages" type="chain" label="SYSMESSAGE" description="SYSMESSAGE_DESC">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="position" type="position" default="drawer" label="POSITION"/>
+        </fields>
+
+        <fields name="analytics" type="chain" label="ANALYTICS" description="ANALYTICS_DESC">
+            <field name="enabled" type="toggle" default="0" label="ANALYTICS_ENABLE"/>
+            <field name="code" type="text" default="" label="ANALYTICS_CODE" class="text-long"/>
+            <field name="position" type="hidden" default="analytics" />
+        </fields>
+    </fieldset>
+    <fieldset name="menu" label="MENU">
+            
+           <fields name="menu" type="selectedset" label="MENU_CTRL" description="MENU_CTRL_DESC">
+            <field name="enabled" type="toggle" default="1" label="SHOW" enabler="true" />
+            <field name="type" type="selectbox" selector="true" default="dropdownmenu" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+            <fields type="set" name="dropdownmenu" label="DROPDOWN">
+                <field name="theme" type="hidden" default="gantry-dropdown"/>
+                <field name="limit_levels" type="hidden" default="0"/>
+                <field name="startLevel" type="hidden" default="0"/>
+                <field name="showAllChildren" type="hidden" default="1"/>
+                <field name="class_sfx" type="hidden" default="top"/>
+                <field name="cache" type="hidden" default="0"/>
+
+                <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" description="MENU_SELECT_DESC"/>
+                <field name="position" type="position" translation="false" default="header-b" label="POSITION" description="POSITION_DESC"/>
+               
+                
+                <field name="responsive-menu" type="hidden" default="panel" setinsession="true"
+                setbysession="true" setincookie="true" setbycookie="true"/>
+             
+                <field name="enable-current-id" type="toggle" default="0" label="ENABLE_ID" description="ENABLE_ID_DESC"/>
+                <field name="module_cache" label="MODULE_CACHE" description="MODULE_CACHE_DESC" type="toggle" default="1"/>
+            </fields>
+        </fields>
+    </fieldset>
+    <fieldset name="layouts" label="LAYOUTS">
+        
+           <fields name="top" type="position" label="TOP_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="header" type="position" label="HEADER_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        
+
+        <fields name="showcase" type="position" label="SHOWCASE_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="feature" type="position" label="FEATURE_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="utility" type="position" label="UTILITY_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="maintop" type="position" label="MAINTOP_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="parallaxtop" type="position" label="Top Parallax Position" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="1" label="">
+                <schemas>1</schemas>
+                <words>2</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <field name="mainbodyPosition" type="positions" default="6,3,3" label="MAINBODY_POS" description="LAYOUT_POS_DESC">
+            <schemas>1,2,3,4</schemas>
+            <words>sa,sb,sc,mb</words>
+            <type>custom</type>
+        </field>
+
+        <fields name="mainbottom" type="position" label="MAINBOTTOM_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="parallaxbottom" type="position" label="Bottom Parallax Position" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="1" label="">
+                <schemas>1</schemas>
+                <words>2</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="extension" type="position" label="EXTENSION_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="extraextension" type="position" label="Extra Extension Positions" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="bottom" type="position" label="BOTTOM_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="extrabottom" type="position" label="Extra Bottom Positions" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="footer" type="position" label="FOOTER_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="extraFooter" type="position" label="Extra_Footer_Positions" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="copyright" type="position" label="COPYRIGHT_POS" description="LAYOUT_POS_DESC">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+    </fieldset>
+
+    <fieldset name="advanced" label="ADVANCED">
+
+        <field name="layout-mode" type="selectbox" default="responsive" label="LAYOUT_MODE" description="LAYOUT_MODE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+            <option value="responsive">RESPONSIVE</option>
+            <option value="1200fixed">1200FIXED</option>
+            <option value="960fixed">960FIXED</option>
+        </field>
+        
+        <field name="loadtransition" type="toggle" default="0" label="LOAD_TRANSITION" description="LOAD_TRANSITION_DESC"/>
+
+        <field name="featureModuleHeight" type="text" default="10%" label="Feature Module Min-Height" description="The height for the modules loaded in the feature position" class="text-medium" />
+                
+        <field name="bottomModuleHeight" type="text" default="10%" label="Bottom Module Min-Height" description="The height for the modules loaded in the bottom position" class="text-medium" />
+                
+        <field name="footerModuleHeight" type="text" default="10%" label="Footer Module Min-Height" description="The height for the modules loaded in the footer position" class="text-medium" />
+         
+        
+        <field name="component-enabled" type="toggle" default="1" label="COMPONENT_ENABLED" description="COMPONENT_ENABLED_DESC"/>
+
+        <field name="mainbody-enabled" type="toggle" default="1" label="MAINBODY_ENABLED" description="MAINBODY_ENABLED_DESC"/>
+
+        <field name="rtl-enabled" type="toggle" default="1" label="RTL" description="RTL_DESC" setinoverride="false"/>
+
+        <field name="pagesuffix-enabled" type="toggle" default="0" label="PAGESUFFIX" description="PAGESUFFIX_DESC"/>
+
+        <field name="selectivizr-enabled" type="toggle" default="0" label="SELECTIVIZR" description="SELECTIVIZR_DESC"/>
+
+        <fields name="less" type="chain" label="LESS_COMPILER" description="LESS_COMPILER_DESC">
+            <field name="compression" type="toggle" default="1" label="LESS_COMPRESSION" description="LESS_COMPRESSION_DESC"/>
+            <field name="compilewait" type="textplus" default="2" append="sec" label="LESS_COMPILEWAIT" description="LESS_COMPILEWAIT_DESC" class="text-short" />
+            <field name="debugheader" type="toggle" default="0" label="LESS_DEBUGHEADER" description="LESS_DEBUGHEADER_DESC"/>
+            <field name="clear" type="ajaxbutton" text="LESS_COMPILE_CLEAR_TEXT" model="lesscompiler" action="clear" label="LESS_COMPILE_CLEAR" setinoverride="false" />
+        </fields>
+    </fieldset>
+    <fieldset name="assignment" label="ASSIGNMENTS">
+        <field name="assignments" type="assignments" panel_position="left" setinoverride="false"/>
+        </fieldset>
+    </form>
